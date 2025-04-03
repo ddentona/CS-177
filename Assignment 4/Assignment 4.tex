@@ -1,0 +1,56 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+
+\begin{document}
+\title{Assignment 4}
+
+\maketitle
+
+\textbf{Assignment 4: Solve any 4 problems in Chapter 23 ``Problems and Points to Ponder'' on page 488 of the textbook.}
+\section*{Problem 23.1} 
+Software for System X has 24 individual functional requirements and 14 nonfunctional requirements. What is the specificity of the requirements? The completeness?
+\subsection*{Solution}
+Specificity: 
+\begin{equation}
+    Q_i =   \frac{n_{ui}}{n_r}
+        =   \frac{n_{ui}}{n_f + n_{nf}}
+        =   \frac{24}{24 + 14}
+        =   \frac{12}{19}
+        =   \boxed{0.632}
+\end{equation}
+\\
+Completeness: We have no formula for the completeness. 
+However, we do know that the completeness reflects whether the class delivers the set of properties that fully reflect the needs of the problem domain. 
+As such, we can estimate that it would be about the value of the specificity, or about \boxed{0.63}.
+
+
+\section*{Problem 23.2} 
+A major information system has 1140 modules. There are 96 modules that perform control and coordination functions and 490 modules whose function depend on prior processing. The system processes approximately 220 data objects that each has an average of three attributes. There are 140 unique database items and 90 different database segments. Finally, 600 modules have single entry and exit points. Compute the DSQI for this system.
+\subsection*{Solution}
+I used a tool by the University of Michigan to find this since I found no formula for it. 
+The answer I got was \boxed{0.618}.
+
+\section*{Problem 23.8}
+
+\subsection*{Solution}
+Integrity is defined by a sum.
+However, there is only one object in the set that would need to be summed.
+\begin{align}
+    I   &=  \Sigma \left[ 1 - \left( T \times \left( 1 - S \right) \right) \right]
+        =   1 - (0.25 \times (1 - 0.3))\\
+        &=  1 - 0.25 * 0.7
+        =   1 - 0.175
+        =   \boxed{0.825}
+\end{align}
+
+\section*{Problem 23.9}
+
+\subsection*{Solution}
+\begin{equation}
+    DRE =   \frac{E}{E + D}
+        =   \frac{30}{30 + 12}
+        =   \frac{5}{7}
+        =   \boxed{0.714}
+\end{equation}
+
+\end{document}
